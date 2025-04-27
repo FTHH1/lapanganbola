@@ -1,4 +1,18 @@
 <!DOCTYPE html>
+
+<?php
+$koneksi=mysqli_connect("localhost","root","","databasesiswa");
+if(isset($_POST["rsubmit"])) {
+    $nama=$_POST["rnama"];
+    $email=$_POST["remail"];
+    $password=$_POST["rpass"];
+    $noktp=$_POST["rktp"];
+$query= "INSERT INTO tabelsiswa VALUES('$nama','$email','$password','$noktp')";
+mysqli_query($koneksi,$query);
+}
+?>
+
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -13,15 +27,15 @@
         <br>
         <p class="welcome"></br> Silahkan Masukan Info Untuk Membuat Akun Anggota</p> 
         <p class="nama">NAMA</p>
-        <input type="text" name="Masukan Nama Anggota" required>
+        <input type="text" name="rnama" required>
         <p class="pass">EMAIL</p>
-        <input type="text" name="Masukan email" required>
+        <input type="text" name="remail" required>
         <p class="pass">PASSWORD</p>
-        <input type="password" name="Masukan password" required>
+        <input type="password" name="rpass" required>
         <p class="pass">Nomor KTP</p>
-        <input type="text" name="Masukan email" required>
+        <input type="text" name="rktp" required>
         <br>
-        <button type="Enter" required> Enter </button> 
+        <button type="Enter" name="rsubmit" required> Enter </button> 
        <a href="login.html"> <button type="Enter" required> Sudah Punya Akun? </button> </a>
     </div>
 </body>
