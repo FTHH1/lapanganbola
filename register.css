@@ -10,8 +10,8 @@ body{
     border: solid rgb(49, 214, 255);
     backdrop-filter: blur(2vh);
     border-radius: 1vw;
-    margin-top: 5%;
-    margin-left: 30% ;
+    margin-top: 1%;
+    margin-left: 29% ;
     font-family: "Nunito Sans", sans-serif;
     font-weight: 600;
     padding: 1% 9% 4% 3%;
@@ -44,11 +44,12 @@ img{
     margin-top: 5%;
     justify-content:center;
     width: 300px;
-    padding-left: 6vw;
+    padding-left: 6.5vw;
     height: 150px;
 }
 
 button{
+
     background-color: rgb(49, 214, 255);
     margin-top: 5%;
     color: rgb(37, 36, 36);
@@ -65,7 +66,6 @@ button:hover{
 
 input{
     border:solid rgb(4, 157, 196) ;
-    background-color: rgba(22, 22, 22, 0.397);
     color: white;
+    background-color: rgba(22, 22, 22, 0.397);
 }
-
