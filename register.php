@@ -7,7 +7,7 @@ if(isset($_POST["rsubmit"])) {
     $email=$_POST["remail"];
     $password=$_POST["rpass"];
     $noktp=$_POST["rktp"];
-$query= "INSERT INTO tabelsiswa VALUES('$nama','$email','$password','$noktp')";
+$query= "INSERT INTO dataanggota VALUES('$nama','$email','$password','$noktp')";
 mysqli_query($koneksi,$query);
 }
 ?>
