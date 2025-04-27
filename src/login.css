@@ -3,24 +3,25 @@ body{
     background-size:cover;
     background-repeat: no-repeat;
     background-attachment: fixed;   
-    backdrop-filter: blur(0.2vh);
     margin: 0%;     
 }
 
 .welcome_kotak{
     border: solid rgb(49, 214, 255);
+    backdrop-filter: blur(1vh);
     border-radius: 1vw;
-    margin-top: 5%;
-    margin-left: 35% ;
+    margin-top: 7%;
+    margin-left: 31% ;
     font-family: "Nunito Sans", sans-serif;
     font-weight: 600;
-    padding: 1% 5% 5% 5%;
+    padding: 1% 9% 4% 9%;
     width:max-content;
     align-items: center;
     text-align: justify;
     border-style: groove;
     background-color: rgba(255, 255, 255, 0.301);
-    animation: FadeIn 3s;   
+    animation: FadeIn 5s;   
+
   }
 
 .welcome{
@@ -31,6 +32,7 @@ body{
 .nama{
     color: rgb(0, 0, 0);
     margin-bottom:0% ;
+    
 }
 
 .pass{
