@@ -1,0 +1,72 @@
+body{
+    background-image: url(tuah.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;   
+    margin: 0%;     
+    overflow: hidden;
+}
+
+.welcome_kotak{
+    border: solid rgb(49, 214, 255);
+    backdrop-filter: blur(2vh);
+    border-radius: 1vw;
+    margin-top: 1%;
+    margin-left: 29% ;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 600;
+    padding: 1% 9% 4% 3%;
+    width:max-content;
+    align-items: center;
+    text-align: justify;
+    border-style: groove;
+    background-color: rgba(255, 255, 255, 0.301);
+    animation: FadeIn 5s;   
+
+  }
+
+.welcome{
+    color: rgb(0, 0, 0);
+    margin: 0%;
+}
+
+.nama{
+    color: rgb(0, 0, 0);
+    margin-bottom:0% ;
+    
+}
+
+.pass{
+    color: rgb(0, 0, 0);
+    margin-bottom:0% ;
+}
+
+img{
+    margin-top: 5%;
+    justify-content:center;
+    width: 300px;
+    padding-left: 6.5vw;
+    height: 150px;
+}
+
+button{
+
+    background-color: rgb(49, 214, 255);
+    margin-top: 5%;
+    color: rgb(37, 36, 36);
+    border-radius: 0.5vw;
+    width: 13.5vw;
+    height: 3vw;
+}
+
+button:hover{
+    transition: 0.2s;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+input{
+    border:solid rgb(4, 157, 196) ;
+    color: white;
+    background-color: rgba(22, 22, 22, 0.397);
+}
