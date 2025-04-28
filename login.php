@@ -18,7 +18,7 @@
         <input type="password" name="Masukan Passowrd" required>
         <br>
         <button type="Enter" required> Enter </button>
-        <a href="register.html"><button type="register" required> Buat akun </button> </a>
+        <a href="register.php"><button type="register" required> Buat akun </button> </a>
     </div>
 </body>
 </html>

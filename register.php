@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <?php
-$koneksi=mysqli_connect("localhost","root","","databasesiswa");
+$koneksi=mysqli_connect("localhost","root","","databola");
 if(isset($_POST["rsubmit"])) {
     $nama=$_POST["rnama"];
     $email=$_POST["remail"];
@@ -18,12 +18,16 @@ mysqli_query($koneksi,$query);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="register.css" rel="stylesheet">
-    <title>Login</title>
+    <title>Register</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
-    <div class="welcome_kotak">
-        <img src="subur.png">
+</head>  
+
+<body>
+    <form method="POST" action="">
+ <div class="welcome_kotak">
+    <img src="subur.png">
         <br>
         <p class="welcome"></br> Silahkan Masukan Info Untuk Membuat Akun Anggota</p> 
         <p class="nama">NAMA</p>
@@ -36,7 +40,8 @@ mysqli_query($koneksi,$query);
         <input type="text" name="rktp" required>
         <br>
         <button type="Enter" name="rsubmit" required> Enter </button> 
-       <a href="login.html"> <button type="Enter" required> Sudah Punya Akun? </button> </a>
+       <a href="login.php"> <button type="button" required> Sudah Punya Akun? </button> </a>
+       </form>
     </div>
 </body>
 </html>
