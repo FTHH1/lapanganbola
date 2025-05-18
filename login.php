@@ -4,20 +4,22 @@
 session_start();
 
     $koneksi=mysqli_connect("localhost","root","","databola");
+        $nama = '';
+        $password = '';
     if(isset($_POST["renter"])) {
         $nama=$_POST["rnama"];
         $password=$_POST["rpass"]; 
     }
-
     $sql = "SELECT * FROM dataanggota WHERE nama = '$nama' 
             AND password= '$password' ";
 
             $result=$koneksi->query($sql);
 
     if ($result->num_rows > 0) {
-        $_SESSION['nama']= $nama;
+        $_SESSION['nama']= 'admin';
     header ("Location: daftar-akun.php");
-    }
+    exit(); // Ensure no further code is executed after redirection
+}
 ?>
 
 <html lang="en">
